@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coding Quiz Game</title>
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  
+<body>
+    <div class="columns">
+        <div class="side-column-left">
+            <a href="" id = "clearHighScores">Clear high scores</a>
+        </div>
+        <div class="middle-column">
+            <h1 id = "question">Coding Quiz Challenge</h1>
+            <p id = "p">Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answer will penalize your score/time by ten seconds!</p>
+            <div class = "buttons">
+                <button id = "button-one"></button>
+                <button id = "button-two"></button>
+                <button id = "button-three"></button>
+                <button id = "button-four"></button>
+            </div>
+            <button class = "start-button" id = "start-button">Start</button>
+            <form>
+                <br>
+                <label for="initials">Enter your initials: </label>
+                <input type="text" id="initials" name="initials">
+                <input id = submit-button type="submit" value="Submit">
+            </form>
+            <p id = "answerP"></p>
+        </div>
+        <div class="side-column-right" id = "timer">Time: 0</div>
+    </div>
+    <script src="./assets/script/questions.js"></script>
+    <script src="./assets/script/script.js"></script>
+</body>
+</html>
